@@ -1,0 +1,15 @@
+/* CPBM */
+.box{
+    height: 300px;
+    width: 400px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: blue;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 15px;
+    float: left;
+}
+.b1{
+    float:right;
+}

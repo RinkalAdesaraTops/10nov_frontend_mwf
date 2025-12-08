@@ -1,0 +1,23 @@
+/* selector - tagname */
+        h3{
+            color:green;
+            background-color: blanchedalmond;
+            font-size: 70px;
+        }
+        /* selector - Id */
+        #demo{
+            color: brown;
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            font-size: 50px;
+        }
+
+        /* selector - classname */
+        .box{
+            height: 550px;
+            width: 650px;
+            background-color: cadetblue;
+            color: yellowgreen;
+            font-size: 45px;
+        }
