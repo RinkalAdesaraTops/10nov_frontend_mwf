@@ -1,15 +1,41 @@
-/* CPBM */
+/* BOX-Model - CPBM */
 .box{
     height: 300px;
     width: 400px; 
-    border-width: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    /* border-width: 2px;
     border-style: dashed;
-    border-color: blue;
+    border-color: blue; */
     background-color: aquamarine;
-    padding: 10px;
+    /* padding: 10px 5px 6px; */
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin: 15px;
     float: left;
+    border:5px dotted orangered;
 }
 .b1{
     float:right;
+}
+h2{
+    clear: both;
+    color: blue;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#t2{
+    color: palevioletred;
+}
+.t1{
+    color: purple;
+}
+@font-face {
+    font-family:"abc";
+    src: url(Pacifico-Regular.ttf);
+}
+.customfont{
+    font-family: abc;
 }

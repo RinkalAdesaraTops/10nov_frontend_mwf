@@ -1,0 +1,16 @@
+.box{
+    height: 200px;
+    width: 400px;
+    border: 20px dotted blue;
+    background-image: url('img.jpg'); 
+    /* repeat, no-repeat, repeat-x,repeat-y */
+    background-repeat: no-repeat;
+    /* auto contain cover */
+    background-size: auto; 
+    /* background-position: center; */
+    background-position: 30% 60%;
+    color:bisque;
+    padding:20px;
+    /* border-box padding-box content-box */
+    background-clip: padding-box;
+}
