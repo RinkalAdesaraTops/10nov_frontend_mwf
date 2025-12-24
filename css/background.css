@@ -1,16 +1,49 @@
-.box{
-    height: 200px;
-    width: 400px;
+.box {
+    height: 400px;
+    width: 600px;
     border: 20px dotted blue;
     background-image: url('img.jpg'); 
     /* repeat, no-repeat, repeat-x,repeat-y */
     background-repeat: no-repeat;
     /* auto contain cover */
-    background-size: auto; 
+    background-size: cover; 
+    /* scroll fixed */
+    background-attachment: fixed; 
     /* background-position: center; */
-    background-position: 30% 60%;
-    color:bisque;
-    padding:20px;
+    /* background-position: 30% 60%; */
+    color: bisque;
+    padding: 20px;
     /* border-box padding-box content-box */
-    background-clip: padding-box;
+    /* background-clip: padding-box; */
+    /* background: #272e59;
+    background: linear-gradient(nulldeg, rgba(39, 46, 89, 1) 0%, rgba(204, 114, 129, 1) 50%); */
+    line-height: 50px;
+    word-spacing: 10px;
+    letter-spacing: 8px;
+    font-size: 40px;
+    /* underline overline line-through */
+    /* text-decoration-line: overline; */
+    /* solid dashed dotted wavy */
+    /* text-decoration-style: wavy; */
+    text-decoration: overline dashed;
+    text-transform: capitalize;
+    text-indent: 100px;
+}
+
+.b1 {
+    height: 600px;
+    width: 500px;
+    border:2px solid black;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.fa-house{
+    color: green;
+    font-size: 70px;
+}
+.fa-circle-user{
+    color:#833AB4;
+    font-size: 50px;
+    
 }
