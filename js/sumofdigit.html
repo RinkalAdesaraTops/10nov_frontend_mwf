@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no=462
+        let count=0
+        let sum=0
+        //count no of digits 1 4 6
+        // sum of digits 
+        // multiply of digits 
+        //1+4+6 = 11 
+        while(no>0){ //146>0 14>0 1>0 0>0
+            let r=no%10 //146%10=6 14%10=4 1%10=1
+            no=Math.floor(no/10); //146/10=14 14/10=1.4=1 1/10=0.1=0
+            count++ //1 2 3
+            sum = sum+r; //sum +=r;
+        }
+        document.write('<br>Number of digits are '+count)
+        document.write('<br>Sum of digits are '+sum)
+    </script>
+</body>
+</html>
