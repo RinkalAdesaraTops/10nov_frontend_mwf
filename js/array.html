@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40]
+        for(let i=0;i<4;i++){
+            document.write('<br>'+arr[i])
+        }
+        arr.push(55)
+        arr.push(65)
+        arr.push(59)
+        document.write('<br>'+arr)
+        arr.pop()
+        document.write('<br>'+arr)
+        arr.unshift(100)
+        arr.unshift(22)
+        arr.unshift(89)
+        document.write('<br>'+arr)
+        arr.shift()
+        document.write('<br>'+arr)
+        //we can add or remove elements from positionwise
+        arr.splice(3,0,45,76,32)
+        document.write('<br>'+arr)
+        arr.splice(4,2)
+        document.write('<br>'+arr)
+        // slice - we can get element from positionwise
+        let ans = arr.slice(3)
+        document.write('<br>'+ans)
+        ans = arr.slice(3,6)
+        document.write('<br>'+ans)
+        ans = arr.slice(-5)
+        document.write('<br>'+ans)
+        ans = arr.slice(-7,-2)
+        document.write('<br>'+ans)
+        // document.write('<br>'+arr[0])
+        // document.write('<br>'+arr[2])
+
+        //1729 
+        //sum of digit = 1+7+2+9=19 
+        //reverse =91
+        //multiply = 19*91 = 1729
+    </script>
+</body>
+</html>
