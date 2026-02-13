@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            {
+                "id":101,
+                "name":"ytryew",
+                "age":25,
+                "salary":45000
+            },
+            {
+                "id":102,
+                "name":"ytryew",
+                "age":18,
+                "salary":25000
+            },
+            {
+                "id":103,
+                "name":"test",
+                "age":35,
+                "salary":70000
+            }
+        ]
+        let ans = arr.filter((i,index)=>{
+                return i.age>18        
+        })  
+        console.log(ans);
+        
+    </script>
+</body>
+</html>

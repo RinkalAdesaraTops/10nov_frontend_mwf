@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Localstorage Example</h3>
+    <input type="text" name="abc" id="abc" value="test">
+    <div id="txt"></div>
+    <div id="txt1"></div>
+    <button onclick="rmAge()">Remove age</button>
+    <button onclick="rmAll()">Remove All</button>
+    <script>
+        localStorage.setItem("name","abcd")
+        localStorage.setItem("age",26)
+        localStorage.setItem("salary",65000)
+        let n = localStorage.getItem("name")
+        let a = localStorage.getItem("age")
+        document.getElementById('txt').innerHTML = "<b>Name is "+n+"</b>"
+        document.getElementById('txt1').innerText = "<b>Age is "+a+"</b>"
+        a = document.getElementById('abc').value
+        document.write('<br>Value is '+a)
+        const rmAge = ()=>{
+            localStorage.removeItem('age')
+        }
+        const rmAll = ()=>{
+            localStorage.clear()
+        }
+        let emp = {
+            name:"sdfhg",
+            age:25,
+            salary:45000
+        }
+        localStorage.setItem("empdata",JSON.stringify(emp))
+        let ab = JSON.parse(localStorage.getItem('empdata'))
+        console.log(ab);
+        
+    </script>
+</body>
+</html>

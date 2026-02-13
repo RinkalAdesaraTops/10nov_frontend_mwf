@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" oninput="dispText()">
+    <div id="txt1"></div>
+    <br>
+    <hr>
+    <div id="txt"></div>
+    <button onclick="disp()">Display</button>
+    <hr>
+    
+    <script>
+        const disp = ()=>{
+            document.getElementById('txt').innerHTML = "<b>This is DOM example</b>"
+            document.getElementById('txt').style.color="red"
+            document.getElementById('txt').style.backgroundColor="yellowgreen"
+            document.getElementById('txt').style.fontSize="25px"
+        }
+        const dispText = ()=>{
+            let a = document.getElementById('username').value
+            console.log(a);
+            document.getElementById('txt1').innerText = "Your name is "+a
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolor culpa! Laudantium nesciunt hic mollitia ex aperiam fugit esse et blanditiis saepe? Quasi officia laudantium illo animi iste repellat vitae?</div>
+    <hr>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolor culpa! Laudantium nesciunt hic mollitia ex aperiam fugit esse et blanditiis saepe? Quasi officia laudantium illo animi iste repellat vitae?</div>
+    <hr>
+    <div class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolor culpa! Laudantium nesciunt hic mollitia ex aperiam fugit esse et blanditiis saepe? Quasi officia laudantium illo animi iste repellat vitae?</div>
+    <hr>
+    <div class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolor culpa! Laudantium nesciunt hic mollitia ex aperiam fugit esse et blanditiis saepe? Quasi officia laudantium illo animi iste repellat vitae?</div>
+    <script>
+        // let a = document.getElementsByClassName('abc')
+        let a = document.getElementsByTagName("div")
+        // getElementsByName
+        console.log(a);
+        for(let i=0;i<a.length;i++){
+            // a[i].style.color="red"
+            if(i%2 == 0){
+                a[i].style.color="red"
+            } else {
+                a[i].style.color="blue"
+            }
+        }
+        // a[0].style.color="red"
+        // a[1].style.color="blue"
+        // a[2].style.color="green"
+    </script>
+</body>
+</html>

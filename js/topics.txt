@@ -1,0 +1,4 @@
+foreach loop
+1 to 9 completed
+session 6 - DOM
+Session 7 - event
