@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn"></div>
+    <script>
+        let a = document.createElement("button")
+        console.log(a);
+        let txt = document.createTextNode("Add")
+        a.appendChild(txt)
+        console.log(a);
+        document.getElementById('btn').append(a)
+        a.addEventListener("click",function(){
+                alert("Button clicked....")
+        })
+
+//task == ul li generate 
+//task == getElementsByName
+    </script>
+</body>
+</html>

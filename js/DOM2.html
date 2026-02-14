@@ -15,21 +15,32 @@
     <hr>
     <div class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolor culpa! Laudantium nesciunt hic mollitia ex aperiam fugit esse et blanditiis saepe? Quasi officia laudantium illo animi iste repellat vitae?</div>
     <script>
+    //    document.querySelector("div").style.color = "purple"
+       let res = document.querySelectorAll("div")
+    //    res = [12,23,34,56]
+       res.forEach((i,j)=>{
+            console.log(i);
+            // i.style.color = "purple"
+       })
         // let a = document.getElementsByClassName('abc')
         let a = document.getElementsByTagName("div")
         // getElementsByName
-        console.log(a);
-        for(let i=0;i<a.length;i++){
-            // a[i].style.color="red"
-            if(i%2 == 0){
-                a[i].style.color="red"
-            } else {
-                a[i].style.color="blue"
-            }
-        }
+        // console.log(a);
+        // for(let i=0;i<a.length;i++){
+        //     // a[i].style.color="red"
+        //     if(i%2 == 0){
+        //         a[i].style.color="red"
+        //     } else {
+        //         a[i].style.color="blue"
+        //     }
+        // }
         // a[0].style.color="red"
         // a[1].style.color="blue"
         // a[2].style.color="green"
+        // queryselector
+        // queryselectorAll
+
+
     </script>
 </body>
 </html>

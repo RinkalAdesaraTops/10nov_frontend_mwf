@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Country:</label>
+    <select name="cnt" id="cnt" onchange="getData()">
+        <option value="">--Select Country--</option>
+        <option value="india">India</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+    </select>
+    <h3 id="txt"></h3>
+    <script>
+        const getData = ()=>{
+            let a = document.getElementById('cnt').value
+            document.getElementById("txt").innerHTML = "Your Country is "+a
+        }
+    </script>
+</body>
+</html>
