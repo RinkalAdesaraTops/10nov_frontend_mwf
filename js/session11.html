@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pending
+        //fullfiled
+        //rejected
+        let pr = new Promise((res,rej)=>{
+            rej("Promise rejected...")
+            res("Promise completed")
+        }).then((e)=>console.log(e))
+        .catch((a)=>console.log(a))
+        let pr1 = new Promise((rs,rj)=>{
+            let age = 15
+            if(age>=18){
+                rs("Eligible 4 vote")
+            } else {
+                rj("Not eligible for vote")
+            }
+        }).then((e)=>console.log(e))
+        .catch((a)=>console.log(a))
+        // synchronous = step by step 
+        // callback hell problem
+        //solution == promises / Async-await
+        // let add = ()=>{
+        //     minus()
+        // }
+        // let minus = ()=>{
+        //     div()
+        // }
+        // let div =async()=>{
+        //     // hdkjfhgkjgd
+        //     await mult()
+        // }
+        // let mult = ()=>{
+
+        // }
+
+        // add()
+    </script>
+</body>
+</html>

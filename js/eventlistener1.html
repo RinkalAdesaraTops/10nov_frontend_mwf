@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        let a = document.createElement("ul")
+        console.log(a);
+        let b = document.createElement("li")
+        console.log(b);
+        let txt = document.createTextNode("ABCD")
+        b.appendChild(txt)
+        let b1 = document.createElement("li")
+        let txt1 = document.createTextNode("TEST")
+        b1.appendChild(txt1)
+        a.append(b)
+        a.append(b1)
+        document.getElementById("demo").append(a)
+    </script>
+</body>
+</html>

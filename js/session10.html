@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="txt"></ul>
+    <script>
+        // spreading,merging and destructuring...
+        let arr = [10,20,30,40,4545]
+        let arr1 = [11,22,33]
+        // es6- es7
+        //... spread operator = fetch all elements
+        let merge_arr = [...arr,...arr1]
+        // document.write('<br>'+merge_arr)
+        //Array destructuring
+        // let [a,b,c,d] = arr //[10,20,30,40]
+        let [a,b,...c] = arr //c= remaining elements = rest of operator
+        document.write('<br>A is '+a)
+        document.write('<br>b is '+b)
+        document.write('<br>C is '+c)
+        let obj = {
+            name:"dsfdsf",
+            age:25,
+            salary:25600
+        }
+        //object destructuring
+        let {name,salary} = obj
+        document.write('<br>Name is '+name)
+        document.write('<br>Salary is '+salary)
+        // template literals
+        let li = ""
+        for(let i=0;i<merge_arr.length;i++){
+            // li += "<li>"+merge_arr[i]+"</li>"
+            li += `<li>${merge_arr[i]}</li>`
+        }
+        document.getElementById("txt").innerHTML = li
+    </script>
+</body>
+</html>
