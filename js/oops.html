@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // oop=object oriented programming
+        // 1)class & object
+        // 2)Data abstraction & encapsulation
+        // 3)Inheritance
+        // 4)Polymorphism
+        class emp{
+            // default constructor
+            constructor(){ //special member function
+                document.write('<br>Constructor called..')
+                this.a=10
+                this.b=20
+            }
+            add(){ //member function - normal function 
+                document.write('<br>Addition is '+(this.a + this.b))
+            }
+        }
+        let obj = new emp()
+        obj.add()
+    </script>
+</body>
+</html>

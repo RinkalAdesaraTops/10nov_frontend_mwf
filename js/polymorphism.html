@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // polymorphism = one name multiple form
+        // runtime polymorphism
+        // data abstraction = data hiding
+        // encapsulation = wrapping data into single unit
+        class A{
+            disp(){
+                document.write('<br>Display A called.')
+            }
+        } 
+        class B extends A{
+            disp(){
+                super.disp()
+                document.write('<br>Display B called.')
+            }
+        }
+        let obj = new B()
+        obj.disp()
+    </script>
+</body>
+</html>
