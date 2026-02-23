@@ -1,0 +1,23 @@
+what is js
+types of js
+let var const diff
+operators 
+== & ===
+prefix & postfix
+js is synchronous or async language?
+for_in& for_of loop diff
+Map,filter,find,includes,some,every
+spreadoperator & rest of operator
+destructuring
+event capturing & bubbling
+strict mode
+debugger
+localStorage
+slice & splice
+object & getter - setter method
+oops concept
+try & catch finally
+promise & async await
+callback & callback hell
+DOM
+setTimeout & setInterval
